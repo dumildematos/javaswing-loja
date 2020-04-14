@@ -146,40 +146,37 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                                  <Component id="produtoPreco2" min="-2" pref="344" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                                  <Component id="produtoNome2" min="-2" pref="344" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                                  <Component id="produtoQuantidade2" min="-2" pref="344" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                                  <Component id="jButton13" min="-2" pref="97" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jButton14" min="-2" pref="97" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jButton18" min="-2" pref="97" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jButton15" min="-2" pref="97" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                                              <Component id="jButton13" min="-2" pref="97" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jButton14" min="-2" pref="97" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jButton18" min="-2" pref="97" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jButton15" min="-2" pref="97" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                                      <Component id="clienteMorada" min="-2" pref="344" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                                      <Component id="clienteNome" min="-2" pref="344" max="-2" attributes="0"/>
+                                                  </Group>
                                               </Group>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="produtoCodigo2" min="-2" pref="344" max="-2" attributes="0"/>
+                                          <Component id="clienteTelefone" min="-2" pref="344" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -187,13 +184,13 @@
                                   <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                                   <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="produtoPesquisa2" min="-2" pref="484" max="-2" attributes="0"/>
+                                  <Component id="clientePesquisa" min="-2" pref="484" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jButton16" min="-2" pref="97" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                  <Component id="produtoIDLB2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="clienteIDLB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -210,7 +207,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jButton17" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                  <Component id="produtoIDLB2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="clienteIDLB" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
@@ -219,31 +216,26 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                           <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="produtoPesquisa2" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                          <Component id="clientePesquisa" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jButton16" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoNome2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="clienteNome" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoCodigo2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="clienteTelefone" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoPreco2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="clienteMorada" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoQuantidade2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jButton14" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                                       <Component id="jButton15" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
@@ -274,16 +266,16 @@
                     <Property name="text" type="java.lang.String" value="NOME"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoNome2">
+                <Component class="javax.swing.JTextField" name="clienteNome">
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoCodigo2">
+                <Component class="javax.swing.JTextField" name="clienteTelefone">
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel16">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="18" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="C&#xd3;D.BARRA"/>
+                    <Property name="text" type="java.lang.String" value="TELEFONE"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel17">
@@ -291,20 +283,10 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="18" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="PRE&#xc7;O"/>
+                    <Property name="text" type="java.lang.String" value="MORADA"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoPreco2">
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel18">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Tahoma" size="18" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="QUANT"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="produtoQuantidade2">
+                <Component class="javax.swing.JTextField" name="clienteMorada">
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton13">
                   <Properties>
@@ -357,7 +339,7 @@
                     <Property name="text" type="java.lang.String" value="PESQUISAR"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoPesquisa2">
+                <Component class="javax.swing.JTextField" name="clientePesquisa">
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton18">
                   <Properties>
@@ -367,7 +349,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton18ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="produtoIDLB2">
+                <Component class="javax.swing.JLabel" name="clienteIDLB">
                   <Properties>
                     <Property name="opaque" type="boolean" value="true"/>
                   </Properties>

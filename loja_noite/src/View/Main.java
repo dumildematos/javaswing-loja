@@ -5,8 +5,10 @@
  */
 package View;
 
+import Controller.ClienteController;
 import Controller.ProdutoController;
 import Model.ProdutoModel;
+import Model.ClienteModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,6 +23,7 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         produtoIDLB.setVisible(false);
+        clienteIDLB.setVisible(false);
         jPFuncionário.setVisible(false);
         jPProduto.setVisible(false);
         jPCliente.setVisible(false);
@@ -42,22 +45,20 @@ public class Main extends javax.swing.JFrame {
         jPCliente = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        produtoNome2 = new javax.swing.JTextField();
-        produtoCodigo2 = new javax.swing.JTextField();
+        clienteNome = new javax.swing.JTextField();
+        clienteTelefone = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        produtoPreco2 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
-        produtoQuantidade2 = new javax.swing.JTextField();
+        clienteMorada = new javax.swing.JTextField();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
-        produtoPesquisa2 = new javax.swing.JTextField();
+        clientePesquisa = new javax.swing.JTextField();
         jButton18 = new javax.swing.JButton();
-        produtoIDLB2 = new javax.swing.JLabel();
+        clienteIDLB = new javax.swing.JLabel();
         jPFuncionário = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -121,13 +122,10 @@ public class Main extends javax.swing.JFrame {
         jLabel15.setText("NOME");
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel16.setText("CÓD.BARRA");
+        jLabel16.setText("TELEFONE");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel17.setText("PREÇO");
-
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel18.setText("QUANT");
+        jLabel17.setText("MORADA");
 
         jButton13.setText("Salvar");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +173,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        produtoIDLB2.setOpaque(true);
+        clienteIDLB.setOpaque(true);
 
         javax.swing.GroupLayout jPClienteLayout = new javax.swing.GroupLayout(jPCliente);
         jPCliente.setLayout(jPClienteLayout);
@@ -190,44 +188,41 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPClienteLayout.createSequentialGroup()
                         .addGap(114, 114, 114)
                         .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPClienteLayout.createSequentialGroup()
-                                .addGap(24, 24, 24)
-                                .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPClienteLayout.createSequentialGroup()
-                                        .addComponent(jLabel17)
-                                        .addGap(67, 67, 67)
-                                        .addComponent(produtoPreco2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPClienteLayout.createSequentialGroup()
-                                        .addComponent(jLabel15)
-                                        .addGap(67, 67, 67)
-                                        .addComponent(produtoNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPClienteLayout.createSequentialGroup()
-                                        .addComponent(jLabel18)
-                                        .addGap(43, 43, 43)
-                                        .addComponent(produtoQuantidade2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPClienteLayout.createSequentialGroup()
-                                        .addGap(28, 28, 28)
-                                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPClienteLayout.createSequentialGroup()
+                                    .addGap(52, 52, 52)
+                                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPClienteLayout.createSequentialGroup()
+                                    .addGap(24, 24, 24)
+                                    .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(jPClienteLayout.createSequentialGroup()
+                                            .addComponent(jLabel17)
+                                            .addGap(67, 67, 67)
+                                            .addComponent(clienteMorada, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(jPClienteLayout.createSequentialGroup()
+                                            .addComponent(jLabel15)
+                                            .addGap(67, 67, 67)
+                                            .addComponent(clienteNome, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(jPClienteLayout.createSequentialGroup()
                                 .addComponent(jLabel16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(produtoCodigo2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(clienteTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPClienteLayout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addComponent(jLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(produtoPesquisa2, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(clientePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPClienteLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(produtoIDLB2)
+                        .addComponent(clienteIDLB)
                         .addGap(269, 269, 269)
                         .addComponent(jLabel14)))
                 .addContainerGap(24, Short.MAX_VALUE))
@@ -240,7 +235,7 @@ public class Main extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)
-                        .addComponent(produtoIDLB2))
+                        .addComponent(clienteIDLB))
                     .addGroup(jPClienteLayout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(jLabel14)
@@ -248,25 +243,21 @@ public class Main extends javax.swing.JFrame {
                         .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel19)
-                                .addComponent(produtoPesquisa2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(clientePesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28)
+                        .addGap(85, 85, 85)
                         .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel15)
-                            .addComponent(produtoNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(clienteNome, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
                         .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel16)
-                            .addComponent(produtoCodigo2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(clienteTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel17)
-                            .addComponent(produtoPreco2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel18)
-                            .addComponent(produtoQuantidade2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(72, 72, 72)
+                            .addComponent(clienteMorada, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(87, 87, 87)
                         .addGroup(jPClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -692,6 +683,16 @@ public class Main extends javax.swing.JFrame {
             produtoCodigo.setText("");
             produtoPreco.setText("");
             produtoQuantidade.setText(null);
+            produtoPesquisa.setText("");
+        }
+        if(jPCliente.isVisible()){
+            clienteNome.setText("");
+            clienteTelefone.setText("");
+            clienteMorada.setText("");
+            clientePesquisa.setText("");
+        }
+        if(jPFuncionário.isVisible()){
+            
         }
     }
     
@@ -798,18 +799,61 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
+        if(clienteNome.getText().isEmpty() || clienteTelefone.getText().isEmpty() || clienteMorada.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Existem campos que devem ser preenchidos");
+        }else{
+           
+            ClienteModel cliente = new ClienteModel();
+            ClienteController controller = new ClienteController();
+            
+            cliente.setNome(clienteNome.getText());
+            cliente.setTelefone(clienteTelefone.getText());
+            cliente.setMorada(clienteMorada.getText());
+            controller.Adicionar(cliente);
+            limpar();
+            
+        }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
+         if(clienteNome.getText().isEmpty() || clienteTelefone.getText().isEmpty() || clienteMorada.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Existem campos que devem ser preenchidos");
+        }else{
+           
+            ClienteModel cliente = new ClienteModel();
+            ClienteController controller = new ClienteController();
+            
+            cliente.setNome(clienteNome.getText());
+            cliente.setTelefone(clienteTelefone.getText());
+            cliente.setMorada(clienteMorada.getText());
+            
+            controller.Editar(cliente, Integer.valueOf(clienteIDLB.getText()));
+            limpar();
+            
+        }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
+        limpar();
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
+        if(clientePesquisa.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Existem campos que devem ser preenchidos");
+        }else{
+            
+            ClienteModel cliente = new ClienteModel();
+            ClienteController controller = new ClienteController();
+            
+            controller.Pesquisar(cliente, String.valueOf(clientePesquisa.getText()));
+            clienteNome.setText(cliente.getNome());
+            clienteTelefone.setText(cliente.getTelefone());
+            clienteMorada.setText(cliente.getMorada());
+            clienteIDLB.setText(String.valueOf(cliente.getId()));
+        }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -819,6 +863,13 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
+         if(clienteIDLB.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Nenhum cliente selecionado para operação");
+        }else{
+            ClienteController controller = new ClienteController();
+            controller.Apagar(Integer.valueOf(clienteIDLB.getText()));
+            limpar();
+        }
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
@@ -871,6 +922,11 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel clienteIDLB;
+    private javax.swing.JTextField clienteMorada;
+    private javax.swing.JTextField clienteNome;
+    private javax.swing.JTextField clientePesquisa;
+    private javax.swing.JTextField clienteTelefone;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -898,7 +954,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -925,21 +980,15 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JTextField produtoCodigo;
     private javax.swing.JTextField produtoCodigo1;
-    private javax.swing.JTextField produtoCodigo2;
     private javax.swing.JLabel produtoIDLB;
     private javax.swing.JLabel produtoIDLB1;
-    private javax.swing.JLabel produtoIDLB2;
     private javax.swing.JTextField produtoNome;
     private javax.swing.JTextField produtoNome1;
-    private javax.swing.JTextField produtoNome2;
     private javax.swing.JTextField produtoPesquisa;
     private javax.swing.JTextField produtoPesquisa1;
-    private javax.swing.JTextField produtoPesquisa2;
     private javax.swing.JTextField produtoPreco;
     private javax.swing.JTextField produtoPreco1;
-    private javax.swing.JTextField produtoPreco2;
     private javax.swing.JTextField produtoQuantidade;
     private javax.swing.JTextField produtoQuantidade1;
-    private javax.swing.JTextField produtoQuantidade2;
     // End of variables declaration//GEN-END:variables
 }
