@@ -124,11 +124,17 @@ public class Main extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel15.setText("NOME");
 
+        clienteNome.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        clienteTelefone.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel16.setText("TELEFONE");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel17.setText("MORADA");
+
+        clienteMorada.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         jButton13.setText("Salvar");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -168,6 +174,8 @@ public class Main extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel19.setText("PESQUISAR");
+
+        clientePesquisa.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         jButton18.setText("Apagar");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -277,14 +285,22 @@ public class Main extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setText("NOME");
 
+        funcionarioNome.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        funcionarioUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel10.setText("USUARIO");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setText("SENHA");
 
+        funcionarioSenha.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel12.setText("FUNÇÃO");
+
+        funcionarioFuncao.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         jButton7.setText("Salvar");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -324,6 +340,8 @@ public class Main extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel13.setText("PESQUISAR");
+
+        funcionarioPesquisa.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         jButton12.setText("Apagar");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -440,14 +458,22 @@ public class Main extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("NOME");
 
+        produtoNome.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
+        produtoCodigo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setText("CÓD.BARRA");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("PREÇO");
 
+        produtoPreco.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("QUANT");
+
+        produtoQuantidade.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         jButton2.setText("Salvar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -487,6 +513,8 @@ public class Main extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setText("PESQUISAR");
+
+        produtoPesquisa.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         jButton6.setText("Apagar");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
