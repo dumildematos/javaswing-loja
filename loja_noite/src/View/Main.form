@@ -382,17 +382,17 @@
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                                  <Component id="produtoPreco1" min="-2" pref="344" max="-2" attributes="0"/>
+                                                  <Component id="funcionarioSenha" min="-2" pref="344" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                                  <Component id="produtoNome1" min="-2" pref="344" max="-2" attributes="0"/>
+                                                  <Component id="funcionarioNome" min="-2" pref="344" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                                  <Component id="produtoQuantidade1" min="-2" pref="344" max="-2" attributes="0"/>
+                                                  <Component id="funcionarioFuncao" min="-2" pref="344" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
@@ -409,7 +409,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="produtoCodigo1" min="-2" pref="344" max="-2" attributes="0"/>
+                                          <Component id="funcionarioUsuario" min="-2" pref="344" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -417,13 +417,13 @@
                                   <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                                   <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="produtoPesquisa1" min="-2" pref="484" max="-2" attributes="0"/>
+                                  <Component id="funcionarioPesquisa" min="-2" pref="484" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jButton10" min="-2" pref="97" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                  <Component id="produtoIDLB1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="funcionarioIDLB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
                                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -440,7 +440,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jButton11" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                  <Component id="produtoIDLB1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="funcionarioIDLB" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
@@ -449,29 +449,29 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                           <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="produtoPesquisa1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                          <Component id="funcionarioPesquisa" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jButton10" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoNome1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="funcionarioNome" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoCodigo1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="funcionarioUsuario" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoPreco1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="funcionarioSenha" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="produtoQuantidade1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="funcionarioFuncao" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -504,16 +504,16 @@
                     <Property name="text" type="java.lang.String" value="NOME"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoNome1">
+                <Component class="javax.swing.JTextField" name="funcionarioNome">
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoCodigo1">
+                <Component class="javax.swing.JTextField" name="funcionarioUsuario">
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel10">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="18" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="C&#xd3;D.BARRA"/>
+                    <Property name="text" type="java.lang.String" value="USUARIO"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel11">
@@ -521,20 +521,20 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="18" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="PRE&#xc7;O"/>
+                    <Property name="text" type="java.lang.String" value="SENHA"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoPreco1">
+                <Component class="javax.swing.JTextField" name="funcionarioSenha">
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel12">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="18" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="QUANT"/>
+                    <Property name="text" type="java.lang.String" value="FUN&#xc7;&#xc3;O"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoQuantidade1">
+                <Component class="javax.swing.JTextField" name="funcionarioFuncao">
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton7">
                   <Properties>
@@ -587,7 +587,7 @@
                     <Property name="text" type="java.lang.String" value="PESQUISAR"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="produtoPesquisa1">
+                <Component class="javax.swing.JTextField" name="funcionarioPesquisa">
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton12">
                   <Properties>
@@ -597,7 +597,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton12ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="produtoIDLB1">
+                <Component class="javax.swing.JLabel" name="funcionarioIDLB">
                   <Properties>
                     <Property name="opaque" type="boolean" value="true"/>
                   </Properties>

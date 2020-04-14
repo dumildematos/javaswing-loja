@@ -6,9 +6,11 @@
 package View;
 
 import Controller.ClienteController;
+import Controller.FuncionarioController;
 import Controller.ProdutoController;
 import Model.ProdutoModel;
 import Model.ClienteModel;
+import Model.FuncionarioModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -24,6 +26,7 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         produtoIDLB.setVisible(false);
         clienteIDLB.setVisible(false);
+        funcionarioIDLB.setVisible(false);
         jPFuncionário.setVisible(false);
         jPProduto.setVisible(false);
         jPCliente.setVisible(false);
@@ -62,22 +65,22 @@ public class Main extends javax.swing.JFrame {
         jPFuncionário = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        produtoNome1 = new javax.swing.JTextField();
-        produtoCodigo1 = new javax.swing.JTextField();
+        funcionarioNome = new javax.swing.JTextField();
+        funcionarioUsuario = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        produtoPreco1 = new javax.swing.JTextField();
+        funcionarioSenha = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        produtoQuantidade1 = new javax.swing.JTextField();
+        funcionarioFuncao = new javax.swing.JTextField();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
-        produtoPesquisa1 = new javax.swing.JTextField();
+        funcionarioPesquisa = new javax.swing.JTextField();
         jButton12 = new javax.swing.JButton();
-        produtoIDLB1 = new javax.swing.JLabel();
+        funcionarioIDLB = new javax.swing.JLabel();
         jPProduto = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -275,13 +278,13 @@ public class Main extends javax.swing.JFrame {
         jLabel9.setText("NOME");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel10.setText("CÓD.BARRA");
+        jLabel10.setText("USUARIO");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel11.setText("PREÇO");
+        jLabel11.setText("SENHA");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel12.setText("QUANT");
+        jLabel12.setText("FUNÇÃO");
 
         jButton7.setText("Salvar");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -329,7 +332,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        produtoIDLB1.setOpaque(true);
+        funcionarioIDLB.setOpaque(true);
 
         javax.swing.GroupLayout jPFuncionárioLayout = new javax.swing.GroupLayout(jPFuncionário);
         jPFuncionário.setLayout(jPFuncionárioLayout);
@@ -350,15 +353,15 @@ public class Main extends javax.swing.JFrame {
                                     .addGroup(jPFuncionárioLayout.createSequentialGroup()
                                         .addComponent(jLabel11)
                                         .addGap(67, 67, 67)
-                                        .addComponent(produtoPreco1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(funcionarioSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPFuncionárioLayout.createSequentialGroup()
                                         .addComponent(jLabel9)
                                         .addGap(67, 67, 67)
-                                        .addComponent(produtoNome1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(funcionarioNome, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPFuncionárioLayout.createSequentialGroup()
                                         .addComponent(jLabel12)
                                         .addGap(43, 43, 43)
-                                        .addComponent(produtoQuantidade1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(funcionarioFuncao, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPFuncionárioLayout.createSequentialGroup()
                                         .addGap(28, 28, 28)
                                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -371,17 +374,17 @@ public class Main extends javax.swing.JFrame {
                             .addGroup(jPFuncionárioLayout.createSequentialGroup()
                                 .addComponent(jLabel10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(produtoCodigo1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(funcionarioUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPFuncionárioLayout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(produtoPesquisa1, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(funcionarioPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPFuncionárioLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(produtoIDLB1)
+                        .addComponent(funcionarioIDLB)
                         .addGap(212, 212, 212)
                         .addComponent(jLabel8)))
                 .addContainerGap(24, Short.MAX_VALUE))
@@ -394,7 +397,7 @@ public class Main extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)
-                        .addComponent(produtoIDLB1))
+                        .addComponent(funcionarioIDLB))
                     .addGroup(jPFuncionárioLayout.createSequentialGroup()
                         .addGap(45, 45, 45)
                         .addComponent(jLabel8)
@@ -402,24 +405,24 @@ public class Main extends javax.swing.JFrame {
                         .addGroup(jPFuncionárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPFuncionárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel13)
-                                .addComponent(produtoPesquisa1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(funcionarioPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(28, 28, 28)
                         .addGroup(jPFuncionárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9)
-                            .addComponent(produtoNome1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(funcionarioNome, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
                         .addGroup(jPFuncionárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
-                            .addComponent(produtoCodigo1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(funcionarioUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPFuncionárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
-                            .addComponent(produtoPreco1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(funcionarioSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(27, 27, 27)
                         .addGroup(jPFuncionárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
-                            .addComponent(produtoQuantidade1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(funcionarioFuncao, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(72, 72, 72)
                         .addGroup(jPFuncionárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -692,7 +695,11 @@ public class Main extends javax.swing.JFrame {
             clientePesquisa.setText("");
         }
         if(jPFuncionário.isVisible()){
-            
+            funcionarioNome.setText("");
+            funcionarioUsuario.setText("");
+            funcionarioSenha.setText("");
+            funcionarioFuncao.setText("");
+            funcionarioPesquisa.setText("");
         }
     }
     
@@ -774,18 +781,67 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        if(funcionarioNome.getText().isEmpty() || funcionarioUsuario.getText().isEmpty() || funcionarioSenha.getText().isEmpty() || funcionarioFuncao.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Existem campos que devem ser preenchidos");
+        }else{
+           
+            FuncionarioModel funcionario = new FuncionarioModel();
+            FuncionarioController controller = new FuncionarioController();
+            
+            funcionario.setNome(funcionarioNome.getText());
+            funcionario.setUsuario(funcionarioUsuario.getText());
+            funcionario.setSenha(funcionarioSenha.getText());
+            funcionario.setFuncao(funcionarioFuncao.getText());
+            
+            controller.Adicionar(funcionario);
+            limpar();
+            
+        }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
+        
+        if(funcionarioNome.getText().isEmpty() || funcionarioUsuario.getText().isEmpty() || funcionarioSenha.getText().isEmpty() || funcionarioFuncao.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Existem campos que devem ser preenchidos");
+        }else{
+             
+            FuncionarioModel funcionario = new FuncionarioModel();
+            FuncionarioController controller = new FuncionarioController();
+            
+            funcionario.setNome(funcionarioNome.getText());
+            funcionario.setUsuario(funcionarioUsuario.getText());
+            funcionario.setSenha(funcionarioSenha.getText());
+            funcionario.setFuncao(funcionarioFuncao.getText());
+            
+            controller.Editar(funcionario, Integer.valueOf(funcionarioIDLB.getText()));
+            limpar();
+            
+        }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
+        limpar();
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
+        if(funcionarioPesquisa.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Existem campos que devem ser preenchidos");
+        }else{
+           
+            FuncionarioModel funcionario = new FuncionarioModel();
+            FuncionarioController controller = new FuncionarioController();
+            
+            controller.Pesquisar(funcionario, funcionarioPesquisa.getText());
+            funcionarioIDLB.setText(String.valueOf(funcionario.getId()));
+            funcionarioNome.setText(funcionario.getNome());
+            funcionarioUsuario.setText(funcionario.getUsuario());
+            funcionarioSenha.setText(funcionario.getSenha());
+            funcionarioFuncao.setText(funcionario.getFuncao());
+        }
+            
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -795,6 +851,14 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
+         if(funcionarioIDLB.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Nenhum produto selecionado para operação");
+        }else{
+            
+            FuncionarioController controller = new FuncionarioController();
+            controller.Apagar(Integer.valueOf(funcionarioIDLB.getText()));
+            limpar();
+        }
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
@@ -927,6 +991,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField clienteNome;
     private javax.swing.JTextField clientePesquisa;
     private javax.swing.JTextField clienteTelefone;
+    private javax.swing.JTextField funcionarioFuncao;
+    private javax.swing.JLabel funcionarioIDLB;
+    private javax.swing.JTextField funcionarioNome;
+    private javax.swing.JTextField funcionarioPesquisa;
+    private javax.swing.JTextField funcionarioSenha;
+    private javax.swing.JTextField funcionarioUsuario;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -979,16 +1049,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPProduto;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JTextField produtoCodigo;
-    private javax.swing.JTextField produtoCodigo1;
     private javax.swing.JLabel produtoIDLB;
-    private javax.swing.JLabel produtoIDLB1;
     private javax.swing.JTextField produtoNome;
-    private javax.swing.JTextField produtoNome1;
     private javax.swing.JTextField produtoPesquisa;
-    private javax.swing.JTextField produtoPesquisa1;
     private javax.swing.JTextField produtoPreco;
-    private javax.swing.JTextField produtoPreco1;
     private javax.swing.JTextField produtoQuantidade;
-    private javax.swing.JTextField produtoQuantidade1;
     // End of variables declaration//GEN-END:variables
 }
