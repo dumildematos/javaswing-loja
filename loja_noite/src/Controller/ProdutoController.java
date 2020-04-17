@@ -51,10 +51,10 @@ public class ProdutoController {
         ResultSet rs = null;
         
         try{
-            stmt = con.prepareStatement("select * from produto where codbarra like ?");
+            stmt = con.prepareStatement("select * from produto where codbarra like ? or nome like ?");
                         
             stmt.setString(1, codigo);
-            
+            stmt.setString(2, codigo);
             rs = stmt.executeQuery();
             
             if(rs.next()){
